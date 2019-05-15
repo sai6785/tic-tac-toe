@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
+import Cell from './cell';
+
 class Table extends Component {
     constructor(props) {
         super(props);
-        this.state = { }
+        this.state = { 
+         }
     }
 
-   
     render() { 
         return (
             <div>
-                Render Cells Here.
+                <Cell/>
             </div>
          );
     }
