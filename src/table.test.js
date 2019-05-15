@@ -17,3 +17,10 @@ it('clicking on reset button', () =>{
     wrapper.find('button.reset-btn').first().simulate('click');
     expect('onClick').toBe.true;
 });
+
+it('clicking on rewind button', () =>{
+    const onClick = jest.fn();
+    let wrapper = mount(<Table />);
+    wrapper.find('button.rewind-btn').first().simulate('click');
+    expect('onClick').toBe.true;
+});
