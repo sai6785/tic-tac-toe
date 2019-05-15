@@ -6,9 +6,9 @@ class Cell extends Component {
         this.state = {  }
     }
     render() { 
-        const { value, name } = this.props;
+        const { value, name, onClick } = this.props;
         return ( 
-            <div className="cell justify-content-center align-items-center d-flex" name={name} value={value}>{value}</div>
+            <div className="cell justify-content-center align-items-center d-flex" name={name} value={value} onClick={e => onClick(e)}>{value}</div>
          );
     }
 }
