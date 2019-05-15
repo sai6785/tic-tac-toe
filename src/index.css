@@ -11,32 +11,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-
-.cell {
-  height: 150px;
-  width: 150px;
-  box-sizing: border-box;
-  border: 4px solid white;
-  font-size: 90px !important;
-}
-
-.gametable {
-  height: 450px;
-  width: 450px;
-}
-
-.cell:hover {
-  background-color: #494a7b;
-}
-
-.mainDiv {
-  height: -webkit-fill-available;
-  width: -webkit-fill-available;
-  background: linear-gradient(to right, #c72c60, #793986) !important;
-  color: white;
-}
-
-.labelName {
-  font-size: 20px !important;
-}
