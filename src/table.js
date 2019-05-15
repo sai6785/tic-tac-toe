@@ -1,17 +1,22 @@
 import React, { Component } from 'react';
 import Cell from './cell';
+import _ from 'lodash';
 
 class Table extends Component {
     constructor(props) {
         super(props);
         this.state = { 
+            cells: 9,
          }
     }
 
     render() { 
+        const { cells = null } = this.state;
         return (
             <div>
-                <Cell/>
+                {
+                    _.times(cells, (index) => <Cell value={cellValues[index] || ""} onClick={this.cellClick} key={index} name={index} />)
+                }
             </div>
          );
     }

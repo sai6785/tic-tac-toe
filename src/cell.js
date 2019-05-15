@@ -6,10 +6,9 @@ class Cell extends Component {
         this.state = {  }
     }
     render() { 
+        const { value} = this.props;
         return ( 
-            <div>
-                Render Cell box here.
-            </div>
+            <div>{value}</div>
          );
     }
 }
