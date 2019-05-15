@@ -15,7 +15,7 @@ class Table extends Component {
         return (
             <div>
                 {
-                    _.times(cells, (index) => <Cell value={cellValues[index] || ""} onClick={this.cellClick} key={index} name={index} />)
+                   _.times(cells, (index) => <Cell value={"Cell"} />)
                 }
             </div>
          );
