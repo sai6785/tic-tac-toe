@@ -10,3 +10,10 @@ describe('Table Component', () => {
             done();
         }, 10000);
 });
+
+it('clicking on reset button', () =>{
+    const onClick = jest.fn();
+    let wrapper = mount(<Table />);
+    wrapper.find('button.reset-btn').first().simulate('click');
+    expect('onClick').toBe.true;
+});
