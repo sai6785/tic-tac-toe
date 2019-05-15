@@ -14,9 +14,11 @@ class Table extends Component {
         const { cells = null } = this.state;
         return (
             <div>
-                {
-                   _.times(cells, (index) => <Cell value={"Cell"} />)
-                }
+                <div className="gametable shadow-lg d-flex flex-row flex-wrap gametable justify-content-center align-items-center">
+                    {
+                        _.times(cells, (index) => <Cell value={cellValues[index] || ""} key={index} name={index} />)
+                    }
+                </div>
             </div>
          );
     }

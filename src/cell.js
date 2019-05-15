@@ -6,9 +6,9 @@ class Cell extends Component {
         this.state = {  }
     }
     render() { 
-        const { value} = this.props;
+        const { value, name } = this.props;
         return ( 
-            <div>{value}</div>
+            <div className="cell justify-content-center align-items-center d-flex" name={name} value={value}>{value}</div>
          );
     }
 }
