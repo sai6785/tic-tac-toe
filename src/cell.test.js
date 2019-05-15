@@ -8,3 +8,10 @@ describe('Cell Component', () => {
         expect(wrapper.exists()).toBe(true);
     })
 });
+
+it('clicking on all the cells', () =>{
+    const onClick = jest.fn();
+    let wrapper = mount(<Cell value={'O'} onClick={onClick} kye="test1" name="test1" />);
+    wrapper.find('div.cell').first().simulate('click');
+    expect('onClick').toBe.true;
+})
